@@ -3,7 +3,6 @@ package com.strategygameapp.model;
 import com.strategygameapp.model.enums.RegionType;
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.UUID;
 
 @Entity @Table(name = "board_cells",
         uniqueConstraints = {
@@ -17,7 +16,7 @@ import java.util.UUID;
 public class BoardCell {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    private Long id;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "match_id", nullable = false, foreignKey = @ForeignKey(name = "fk_board_cells_match"))

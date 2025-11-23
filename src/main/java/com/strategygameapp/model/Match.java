@@ -2,14 +2,12 @@ package com.strategygameapp.model;
 
 import com.strategygameapp.model.enums.MatchStatus;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.OffsetDateTime;
 
-@Entity @Table(name = "matches")
+@Entity
+@Table(name = "matches")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
