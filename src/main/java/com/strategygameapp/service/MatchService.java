@@ -80,15 +80,18 @@ public class MatchService {
                 .build();
         matchRepo.save(m);
 
-        for (int seat = 0; seat < req.getPlayers(); seat++) {
-            boolean bot = req.getBots().get(seat);
+        for (int seat = 1; seat <= req.getPlayers(); seat++) {
+            boolean bot = req.getBots().get(seat - 1);
             MatchPlayer p = MatchPlayer.builder()
                     .match(m)
                     .seat(seat)
                     .bot(bot)
                     .alive(true)
                     .lightning(2)
-                    .wood(2).stone(2).glass(2).force(2)
+                    .wood(2)
+                    .stone(2)
+                    .glass(2)
+                    .force(2)
                     .build();
             playerRepo.save(p);
         }
