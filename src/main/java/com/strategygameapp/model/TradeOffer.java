@@ -21,10 +21,10 @@ public class TradeOffer {
     @JoinColumn(name = "match_id", nullable = false, foreignKey = @ForeignKey(name = "fk_trade_offers_match"))
     private Match match;
 
-    @Column(nullable = false)
+    @Column(name = "from_seat", nullable = false)
     private int from;
 
-    @Column(nullable = false)
+    @Column(name = "to_seat", nullable = false)
     private int to;
 
     @Enumerated(EnumType.STRING)
@@ -32,7 +32,7 @@ public class TradeOffer {
     private ResourceType give;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 20)
+    @Column(name = "get_resource",nullable = false, length = 20)
     private ResourceType get;
 
     @Enumerated(EnumType.STRING)
