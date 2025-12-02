@@ -1,7 +1,7 @@
 package com.strategygameapp.service;
 
 
-import com.strategygameapp.dto.CreateMatchRequest;
+import com.strategygameapp.dto.match.CreateMatchRequest;
 import com.strategygameapp.model.BoardCell;
 import com.strategygameapp.model.Match;
 import com.strategygameapp.model.MatchPlayer;
@@ -41,7 +41,7 @@ public class MatchService {
         Match m = opt.get();
         if (m.getStatus() == MatchStatus.PENDING) {
             m.setStatus(MatchStatus.RUNNING);
-            m.setCurrentTurn(0);
+            m.setCurrentTurn(1);
             m.setStartedAt(OffsetDateTime.now());
             matchRepo.save(m);
         }

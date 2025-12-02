@@ -1,8 +1,8 @@
 package com.strategygameapp.service;
 
-import com.strategygameapp.dto.AcceptTradeRequest;
-import com.strategygameapp.dto.CreateTradeRequest;
-import com.strategygameapp.dto.TradeResponse;
+import com.strategygameapp.dto.trade.AcceptTradeRequest;
+import com.strategygameapp.dto.trade.CreateTradeRequest;
+import com.strategygameapp.dto.trade.TradeResponse;
 import com.strategygameapp.model.Match;
 import com.strategygameapp.model.MatchPlayer;
 import com.strategygameapp.model.TradeOffer;

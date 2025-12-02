@@ -1,7 +1,7 @@
 package com.strategygameapp.controller;
 
-import com.strategygameapp.dto.BoardResponse;
-import com.strategygameapp.dto.CellResponse;
+import com.strategygameapp.dto.board.BoardResponse;
+import com.strategygameapp.dto.board.CellResponse;
 import com.strategygameapp.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

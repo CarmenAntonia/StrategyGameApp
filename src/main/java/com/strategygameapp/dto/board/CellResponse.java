@@ -1,4 +1,4 @@
-package com.strategygameapp.dto;
+package com.strategygameapp.dto.board;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

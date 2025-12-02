@@ -1,7 +1,7 @@
 package com.strategygameapp.service;
 
-import com.strategygameapp.dto.BoardResponse;
-import com.strategygameapp.dto.CellResponse;
+import com.strategygameapp.dto.board.BoardResponse;
+import com.strategygameapp.dto.board.CellResponse;
 import com.strategygameapp.model.BoardCell;
 import com.strategygameapp.model.Match;
 import com.strategygameapp.repository.BoardCellRepository;

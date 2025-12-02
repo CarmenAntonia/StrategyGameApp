@@ -1,8 +1,8 @@
 package com.strategygameapp.controller;
 
-import com.strategygameapp.dto.AcceptTradeRequest;
-import com.strategygameapp.dto.CreateTradeRequest;
-import com.strategygameapp.dto.TradeResponse;
+import com.strategygameapp.dto.trade.AcceptTradeRequest;
+import com.strategygameapp.dto.trade.CreateTradeRequest;
+import com.strategygameapp.dto.trade.TradeResponse;
 import com.strategygameapp.model.TradeOffer;
 import com.strategygameapp.service.TradeService;
 import lombok.RequiredArgsConstructor;

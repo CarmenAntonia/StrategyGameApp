@@ -1,4 +1,4 @@
-package com.strategygameapp.dto;
+package com.strategygameapp.dto.match;
 
 import lombok.Data;
 import java.util.List;

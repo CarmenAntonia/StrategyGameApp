@@ -1,6 +1,6 @@
 package com.strategygameapp.controller;
 
-import com.strategygameapp.dto.PlayerResponse;
+import com.strategygameapp.dto.player.PlayerResponse;
 import com.strategygameapp.model.MatchPlayer;
 import com.strategygameapp.service.PlayerService;
 import lombok.RequiredArgsConstructor;
