@@ -1,7 +1,7 @@
 package com.strategygameapp.controller;
 
-import com.strategygameapp.dto.CreateMatchRequest;
-import com.strategygameapp.dto.MatchResponse;
+import com.strategygameapp.dto.match.CreateMatchRequest;
+import com.strategygameapp.dto.match.MatchResponse;
 import com.strategygameapp.model.Match;
 import com.strategygameapp.service.MatchService;
 import lombok.RequiredArgsConstructor;
